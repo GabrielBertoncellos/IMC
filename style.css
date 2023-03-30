@@ -1,0 +1,75 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #F9F5EB;
+    
+}
+.cabecalho {
+    padding: 2rem;
+    background-color: #E4DCCF;
+}
+.cabecalho__nav--lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+/* SEÇÃO 1 */
+
+.principal {
+    text-align: justify;
+    margin: 0 1rem;
+}
+.titulo, .titulo2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+.texto {
+    text-indent: 15px;
+    margin: 10px 0;
+}
+.section1 {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    
+}
+img {
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+}
+
+/* SEÇÃO 2 */
+.section2 {
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: #E4DCCF;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 45px;
+    width: 100px;
+    text-align: center;
+    
+}
+
+@media(max-width: 720px) {
+    img {
+        display: none;
+    }
+    .section1 {
+        display: block;
+        padding: 0 2rem;
+    }
+    .titulo {
+        text-align: center;
+    }
+}
